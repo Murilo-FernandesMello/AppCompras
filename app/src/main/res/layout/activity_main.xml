@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Escolha o Seu Produto"
+        android:textSize="27sp"
+        android:textColor="@color/white"/>
+
+    <CheckBox
+        android:id="@+id/cbArroz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitle"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="30dp"
+        android:text="Arroz (R$2,69)"
+        android:textSize="23sp"
+        android:textColor="@color/white"/>
+
+    <CheckBox
+        android:id="@+id/cbFeijao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cbArroz"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="30dp"
+        android:text="Feijão (R$2,70)"
+        android:textSize="23sp"
+        android:textColor="@color/white"/>
+
+    <CheckBox
+        android:id="@+id/cbLeite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cbFeijao"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="30dp"
+        android:text="Leite (R$5,00)"
+        android:textSize="23sp"
+        android:textColor="@color/white"/>
+
+    <CheckBox
+        android:id="@+id/cbCarne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cbLeite"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="30dp"
+        android:text="Carne (R$9,70)"
+        android:textSize="23sp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cbCarne"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Total à Pagar"
+        android:textSize="27sp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"/>
+
+</RelativeLayout>
